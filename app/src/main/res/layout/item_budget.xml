@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittext"
+    android:padding="8dp">
+
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+
+     <TextView
+         android:id="@+id/description"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="32dp"
+         android:layout_marginTop="16dp"
+         android:layout_weight="1"
+         android:text="Description"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+         android:textSize="18dp"
+         android:textStyle="bold"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <TextView
+         android:id="@+id/priority"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="32dp"
+         android:layout_marginTop="4dp"
+         android:layout_weight="1"
+         android:text="priority"
+         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+         android:textColor="@color/blue"
+         android:textSize="17sp"
+         android:textStyle="bold"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/description"
+         app:layout_constraintVertical_bias="0.194" />
+
+     <ImageView
+         android:id="@+id/delete"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_marginEnd="28dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@android:drawable/ic_menu_delete" />
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
